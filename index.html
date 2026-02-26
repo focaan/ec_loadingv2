@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Images Container -->
+    <div class="background-container" id="backgroundContainer"></div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Top Left Box - Controls -->
+    <div class="info-box top-left">
+        <div class="info-item" id="volumeUpControl">
+            <div class="icon"><i class="fas fa-volume-up"></i></div>
+            <div class="text">Zvýšit hlasitost</div>
+        </div>
+        <div class="info-item" id="volumeDownControl">
+            <div class="icon"><i class="fas fa-volume-down"></i></div>
+            <div class="text">Snížit hlasitost</div>
+        </div>
+        <div class="info-item" id="muteControl">
+            <div class="icon"><i class="fas fa-volume-mute"></i></div>
+            <div class="text">Mezerník pro vypnutí/zapnutí</div>
+        </div>
+    </div>
+
+    <!-- Top Right Box - Volume -->
+    <div class="info-box top-right" id="volumeBox">
+        <div class="info-item">
+            <div class="icon" id="volumeIcon"><i class="fas fa-volume-up"></i></div>
+            <div class="text">Hlasitost: <span id="volumePercent">30%</span></div>
+        </div>
+        <!-- Volume Bar -->
+        <div class="volume-bar-container">
+            <div class="volume-bar">
+                <div class="volume-fill" id="volumeFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-text">
+            <span id="progressText">Načítání...</span>
+            <span id="progressPercent">0%</span>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
