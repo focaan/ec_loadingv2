@@ -3,48 +3,22 @@ class FiveMLoadingScreen {
     // Configuration
     this.config = {
       images: [
-        "https://cdn.eclipseroleplay.cz/loading/images/1.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/2.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/3.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/4.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/5.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/6.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/7.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/8.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/9.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/10.jpg",
-        "https://cdn.eclipseroleplay.cz/loading/images/11.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/12.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/13.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/14.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/15.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/16.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/17.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/18.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/19.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/20.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/21.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/22.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/23.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/24.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/25.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/26.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/27.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/28.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/29.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/30.webp",
-        "https://cdn.eclipseroleplay.cz/loading/images/31.webp",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/1.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/2.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/3.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/4.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/5.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/6.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/7.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/8.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/9.jpg",
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/images/10.jpg",
       ],
       music: [
-        "https://cdn.eclipseroleplay.cz/loading/music.mp3",  // 0
-        "https://cdn.eclipseroleplay.cz/loading/music1.mp3", // 1
-        "https://cdn.eclipseroleplay.cz/loading/music2.mp3", // 2
-        "https://cdn.eclipseroleplay.cz/loading/music3.mp3", // 3
-        "https://cdn.eclipseroleplay.cz/loading/music4.mp3", // 4
-        "https://cdn.eclipseroleplay.cz/loading/music5.mp3", // 5
-        "https://cdn.eclipseroleplay.cz/loading/music6.mp3", // 6
-        "https://cdn.eclipseroleplay.cz/loading/music7.mp3", // 7
-        "https://cdn.eclipseroleplay.cz/loading/music8.mp3"  // Ektor and Calin - Toxickej
+        "https://cdn.eclipseroleplay.cz/loading/music2.mp3", // 0
+        "https://cdn.eclipseroleplay.cz/loading/music3.mp3", // 1
+        "https://cdn.eclipseroleplay.cz/loading/music4.mp3", // 2
+        "https://raw.githubusercontent.com/Focaan/fcn_loading/main/fcn_loading/music/music.mp3"  // 3
       ],
       imageChangeInterval: 5000,
       musicChangeInterval: 280000,
@@ -401,4 +375,5 @@ if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => new FiveMLoadingScreen())
 } else {
   new FiveMLoadingScreen()
+
 }
